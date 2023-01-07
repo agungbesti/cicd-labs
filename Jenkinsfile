@@ -11,5 +11,10 @@ pipeline {
                 sh 'npm install' 
             }
         }
+        stage('Test') {
+            steps {
+                sh './jenkis/scripts/test.sh'
+            }
+        }
     }
 }
